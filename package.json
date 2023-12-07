@@ -1,0 +1,45 @@
+{
+  "name": "@candyloverjs/deploy",
+  "version": "1.0.0",
+  "description": "一个轻量的前端部署工具",
+  "keywords": [
+    "deploy",
+    "ssh"
+  ],
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "CandyLover",
+  "license": "ISC",
+  "private": true,
+  "main": "index.js",
+  "bin": {
+    "cl-deploy": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "father dev",
+    "deploy": "node bin/index.js deploy"
+  },
+  "devDependencies": {
+    "father": "^4.3.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.9",
+    "inquirer": "8.2.5",
+    "node-ssh": "^13.1.0",
+    "ora": "^5.4.1",
+    "rimraf": "^5.0.1",
+    "schema-utils": "^4.2.0",
+    "yargs-parser": "^21.1.1"
+  }
+}
